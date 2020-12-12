@@ -73,26 +73,26 @@ function setContinuousProperties() {
 	box5.body.position.y = bob5.body.position.y + 80;
 }
 
-function mouseDragged() {
-	moveBobWithMouse(bob1);
-	moveBobWithMouse(bob2);
-	moveBobWithMouse(bob3);
-	moveBobWithMouse(bob4);
-	moveBobWithMouse(bob5);
-}
+// function mouseDragged() {
+// 	moveBobWithMouse(bob1);
+// 	moveBobWithMouse(bob2);
+// 	moveBobWithMouse(bob3);
+// 	moveBobWithMouse(bob4);
+// 	moveBobWithMouse(bob5);
+// }
 
-function moveBobWithMouse(bob) {
-	if (thisBobIsDragged(bob)) {
-		bob.body.position.x = mouseX;
-		console.log("Mouse is Dragged over: " + bob);
-	}
-}
+// function moveBobWithMouse(bob) {
+// 	if (thisBobIsDragged(bob)) {
+// 		bob.body.position.x = mouseX;
+// 		console.log("Mouse is Dragged over: " + bob);
+// 	}
+// }
 
-function thisBobIsDragged(bead) {
-	return (mouseX > (bead.body.position.x - 15)
-		&& mouseX < (bead.body.position.x + 15)
-		&& mouseY > (bead.body.position.y - 15)
-		&& mouseX < (bead.body.position.y + 15))
-}
+// function thisBobIsDragged(bead) {
+// 	return (mouseX > (bead.body.position.x - 15)
+// 		&& mouseX < (bead.body.position.x + 15)
+// 		&& mouseY > (bead.body.position.y - 15)
+// 		&& mouseX < (bead.body.position.y + 15))
+// }
 
 // Also do see index.html.
